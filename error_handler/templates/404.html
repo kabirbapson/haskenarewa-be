@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap"
+      rel="stylesheet"
+    />
+    <title>Page Not Found</title>
+    <style>
+      body {
+        font-family: "Fredoka One", cursive;
+        color: #fff;
+        text-align: center;
+        text-transform: uppercase;
+
+        background: #4b79a1; /* fallback for old browsers */
+        background: -webkit-linear-gradient(
+          to right,
+          #4b79a1,
+          #283e51
+        ); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(
+          to right,
+          #4b79a1,
+          #283e51
+        ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      }
+      .container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .status_code {
+        font-size: 100px;
+        color: white;
+        line-height: 0;
+      }
+      .error {
+        font-size: 50px;
+      }
+      .notfound {
+        font-size: 30px;
+      }
+      .message {
+        font-size: 20px;
+      }
+
+      /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+      @media screen and (max-width: 600px) {
+        .status_code {
+          font-size: 80px;
+        }
+
+        .error {
+          font-size: 30px;
+        }
+        .notfound {
+          font-size: 20px;
+        }
+        .message {
+          font-size: 10px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="wrapper">
+        <span class="status_code">404</span><br />
+        <span class="error">error</span><br />
+        <span class="notfound">page not found</span><br /><br />
+        <span class="message"
+          >hmm... you enter a wrong address!! we don't have this endpoint check
+          the doc</span
+        ><br />
+      </div>
+    </div>
+  </body>
+</html>
